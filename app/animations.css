@@ -163,6 +163,21 @@
   }
 }
 
+@utility tilt {
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: perspective(900px) rotateX(5deg) rotateY(-5deg) translateY(-6px);
+    border-color: var(--color-ember-800);
+    box-shadow:
+      0 30px 60px rgba(0, 0, 0, 0.6),
+      0 0 0 1px rgba(255, 181, 71, 0.12);
+  }
+}
+
 @utility reveal {
   @supports (animation-timeline: view()) {
     animation: reveal-rise linear both;
