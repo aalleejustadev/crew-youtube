@@ -1,0 +1,142 @@
+@theme {
+  --animate-word-in: word-in 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-pulse-dot: pulse-dot 1.6s ease-in-out infinite;
+  --animate-twinkle: twinkle 4s ease-in-out infinite;
+  --animate-horizon: horizon 6s ease-in-out infinite;
+  --animate-rise: rise 1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-float: float-y 6s ease-in-out infinite;
+  --animate-dash: dash 2s ease-out forwards;
+  --animate-ticker: ticker 15s cubic-bezier(0.7, 0, 0.3, 1) infinite;
+}
+
+@keyframes word-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shine {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes horizon {
+  0%,
+  100% {
+    box-shadow:
+      0 -2px 0 rgba(255, 196, 110, 0.95),
+      0 -40px 140px rgba(255, 122, 26, 0.55),
+      0 -120px 260px rgba(255, 122, 26, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 -2px 0 rgba(255, 214, 150, 1),
+      0 -50px 170px rgba(255, 140, 40, 0.7),
+      0 -140px 300px rgba(255, 122, 26, 0.32);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ticker {
+  0%,
+  14% {
+    transform: translateY(0);
+  }
+  17%,
+  31% {
+    transform: translateY(-36px);
+  }
+  34%,
+  48% {
+    transform: translateY(-72px);
+  }
+  51%,
+  65% {
+    transform: translateY(-108px);
+  }
+  68%,
+  82% {
+    transform: translateY(-144px);
+  }
+  85%,
+  100% {
+    transform: translateY(-180px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

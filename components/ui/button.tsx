@@ -18,6 +18,10 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
+        brand:
+          "border-0 bg-ember-gradient font-semibold text-ember-ink hover:-translate-y-0.5 hover:text-ember-ink hover:shadow-[0_12px_40px_rgba(255,122,26,0.45)]",
+        glass:
+          "border-night-600 bg-night-850/60 bg-clip-border hover:border-night-500 hover:bg-night-800 hover:text-white",
       },
       size: {
         default:
@@ -31,6 +35,8 @@ const buttonVariants = cva(
         "icon-sm":
           "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg",
         "icon-lg": "size-9",
+        md: "h-10 gap-2 rounded-[10px] px-4 leading-[1.6]",
+        xl: "h-13 gap-2.5 rounded-[12px] px-6.5 text-base leading-[1.6]",
       },
     },
     defaultVariants: {
