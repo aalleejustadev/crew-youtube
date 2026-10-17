@@ -1,3 +1,4 @@
+import { ClosingCta } from "@/components/landing/closing-cta"
 import { Faq } from "@/components/landing/faq"
 import { Features } from "@/components/landing/features"
 import { Hero } from "@/components/landing/hero"
@@ -17,6 +18,7 @@ export default function Page() {
         <Features />
         <Safety />
         <Faq />
+        <ClosingCta />
       </main>
     </>
   )
