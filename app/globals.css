@@ -40,6 +40,26 @@
   --color-paper-200: #e7e5e4;
   --color-paper-600: #57534e;
   --color-paper-900: #1c1917;
+
+  --color-graphite-50: #f2f2f3;
+  --color-graphite-300: #b4b4ba;
+  --color-graphite-400: #8c8c94;
+  --color-graphite-500: #757575;
+  --color-graphite-600: #3a3a40;
+  --color-graphite-700: #2c2c31;
+  --color-graphite-750: #26262a;
+  --color-graphite-800: #1f1f23;
+  --color-graphite-810: #1e1e21;
+  --color-graphite-825: #1b1b1e;
+  --color-graphite-850: #17171a;
+  --color-graphite-875: #141416;
+  --color-graphite-900: #121214;
+  --color-graphite-925: #0f0f11;
+  --color-graphite-950: #0c0c0d;
+
+  --color-status-working: #7ab8ff;
+  --color-status-waiting: #ffb357;
+  --color-status-waiting-border: #5c4320;
 }
 
 @utility bg-ember-gradient {

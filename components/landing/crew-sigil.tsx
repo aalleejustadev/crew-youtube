@@ -23,10 +23,11 @@ const shapes: Record<Teammate, React.ReactNode> = {
 export function CrewSigil({
   teammate,
   size = 24,
+  ...props
 }: {
   teammate: Teammate
   size?: number
-}) {
+} & React.ComponentProps<"svg">) {
   return (
     <svg
       aria-hidden="true"
@@ -38,6 +39,7 @@ export function CrewSigil({
       strokeWidth="1.6"
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     >
       {shapes[teammate]}
     </svg>
